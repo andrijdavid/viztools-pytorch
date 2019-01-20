@@ -35,9 +35,9 @@ Visualize the activation value at selected convolution layer and filter. <br />
 >>> plt.show()
 ```
 **Sample Output:**
-<div style="display: flex; height: 363px;" align="center">
-  <div style="flex: 50%; padding: 5px;"><img style="height: 333px; width: 100%;" src="examples/zebra.jpg" alt="input"><br />Figure 1: Input image</div>
-  <div style="flex: 50%; padding: 5px;"><img style="height: 333px; width: 100%;" src="examples/act_val-zebra.png" alt="output"><br />Figure 2: Activation Value Heatmap</div>
+<div style="height: 363px;" align="center">
+  <div style="padding: 5px;"><img height=333px width=333px src="examples/zebra.jpg" alt="input"><br />Figure 1: Input image</div>
+  <div style="padding: 5px;"><img height=333px width=333px src="examples/act_val-zebra.png" alt="output"><br />Figure 2: Activation Value Heatmap</div>
 </div>
 
 ## CNN Filter Visualization
@@ -71,9 +71,9 @@ Visualize the gradient backpropagated from target layer and filter/feature when 
 >>> plt.show()
 ```
 **Sample Output:**
-<div style="display: flex; height: 254px;" align="center">
-  <div style="flex: 50%; padding: 5px;"><img style="height: 224px; width: 224px;" src="examples/cat.jpg" alt="input"><br />Figure 4: Input image</div>
-  <div style="flex: 50%; padding: 5px;"><img style="height: 224px; width: 224px;" src="examples/backprop-cat.png" alt="gradient"><br />Figure 5: Gradient Backpropagated from different filter</div>
+<div style="height: 254px;" align="center">
+  <div style="padding: 5px;"><img height=224px width=224px src="examples/cat.jpg" alt="input"><br />Figure 4: Input image</div>
+  <div style="padding: 5px;"><img height=224px width=224px src="examples/backprop-cat.png" alt="gradient"><br />Figure 5: Gradient Backpropagated from different filter</div>
 </div>
 
 ## Others
@@ -93,9 +93,9 @@ Combine a list of numpy images to form a big square image.<br />
 >>> plt.show()
 ```
 **Sample Output:**
-<div style="display: flex; height: 254px;" align="center">
-  <div style="flex: 50%; padding: 5px;"><img style="height: 224px; width: 224px;" src="examples/spider_n_mantis.jpg" alt="input"><br />Figure 6: Input image</div>
-  <div style="flex: 50%; padding: 5px;"><img style="height: 224px; width: 224px;" src="examples/act_val-spider_n_mantis.png" alt="output"><br />Figure 7: Activation Value Heatmap of 4 filters</div>
+<div style="height: 254px;" align="center">
+  <div style="padding: 5px;"><img height=224px width=224px src="examples/spider_n_mantis.jpg" alt="input"><br />Figure 6: Input image</div>
+  <div style="padding: 5px;"><img height=224px width=224px src="examples/act_val-spider_n_mantis.png" alt="output"><br />Figure 7: Activation Value Heatmap of 4 filters</div>
 </div>
 
 ### `viztools.util.defuse_model`
