@@ -72,7 +72,7 @@ def viz_back_prop(image, model, layer, kernel):
     # normalize gradient
     gradient -= gradient.min()
     gradient /= gradient.max()
-    gradient = gradient.data.numpy()[0].transpose(1, 2, 0)
+    gradient = gradient.detach().cpu().numpy()[0].transpose(1, 2, 0)
     gradient = np.uint8(gradient * 255)
     # remove all hooks
     for handler in handlers: handler.remove()
