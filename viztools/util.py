@@ -87,7 +87,7 @@ def convert_image_tensor(image, reverse=False):
     else:
         assert type(image) == torch.Tensor, "'image' is not torch.Tensor"
         # 1 x C x H x W -> C x H x W
-        image = image.squeeze(0).data.numpy()
+        image = image.squeeze(0).detach().cpu().numpy()
         # C x H x W -> H x W x C
         image = image.transpose(1, 2, 0)
 
