@@ -46,7 +46,7 @@ def viz_act_val(image, model, layer, kernel):
         image = module(image)
         if tag == layer:
             assert kernel < image.size()[1], "'kernel' out of bound"
-            activation = image[0, kernel].data.numpy()
+            activation = image[0, kernel].cpu().numpy()
             activation -= activation.min()
             activation /= activation.max()
             return activation
