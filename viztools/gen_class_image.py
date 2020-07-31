@@ -69,7 +69,7 @@ def gen_class_image(model,
             plt.figure(0), plt.clf()
             plt.title(" - ".join([
                 f"epoch: {i}",
-                f"loss: {loss.data.numpy():.4f}",
+                f"loss: {loss.detach().cpu().numpy():.4f}",
                 f"lr: {optimizer.param_groups[0]['lr']:.3f}"
             ]))
             plt.imshow(
